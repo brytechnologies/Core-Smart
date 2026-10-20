@@ -526,9 +526,6 @@ void BitcoinGUI::createToolBars()
         toolbar->addAction(receiveCoinsAction);
         toolbar->addAction(historyAction);
         toolbar->addAction(smartnodeAction);
-        toolbar->addAction(smartrewardsAction);
-        toolbar->addAction(termrewardsAction);
-        toolbar->addAction(smartvotingAction);
         overviewAction->setChecked(true);
     }
 }

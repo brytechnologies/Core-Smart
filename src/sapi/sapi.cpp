@@ -29,8 +29,6 @@
 #include "sapi/sapi_common.h"
 #include "sapi/sapi_transaction.h"
 #include "sapi/sapi_smartnodes.h"
-#include "sapi/sapi_smartrewards.h"
-#include "sapi/sapi_termrewards.h"
 
 #include "compat.h"
 #include "util.h"
@@ -591,9 +589,7 @@ bool StartSAPI()
         &blockchainEndpoints,
         &addressEndpoints,
         &transactionEndpoints,
-        &smartnodeEndpoints,
-        &smartrewardsEndpoints,
-        &termrewardsEndpoints
+        &smartnodeEndpoints
     };
 
     return true;
