@@ -6,6 +6,7 @@
 #define BITCOIN_HTTPSERVER_H
 
 #include "sync.h"
+#include <deque>
 #include <string>
 #include <stdint.h>
 #include <boost/thread.hpp>
