@@ -56,6 +56,13 @@
 #include <QToolBar>
 #include <QVBoxLayout>
 
+#include <boost/bind/bind.hpp>
+
+using boost::placeholders::_1;
+using boost::placeholders::_2;
+using boost::placeholders::_3;
+using boost::placeholders::_4;
+
 #if QT_VERSION < 0x050000
 #include <QTextDocument>
 #include <QUrl>

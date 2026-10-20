@@ -5,13 +5,15 @@
 #include "trafficgraphwidget.h"
 #include "clientmodel.h"
 
-#include <boost/bind.hpp>
+#include <boost/bind/bind.hpp>
 
 #include <QPainter>
 #include <QColor>
 #include <QTimer>
 
 #include <cmath>
+
+using boost::placeholders::_1;
 
 #define XMARGIN                 10
 #define YMARGIN                 10
