@@ -897,6 +897,12 @@ int GetNumCores()
 #endif
 }
 
+int GetNumLogicalCores()
+{
+    int nCores = boost::thread::hardware_concurrency();
+    return nCores > 0 ? nCores : 1;
+}
+
 std::string CopyrightHolders(const std::string& strPrefix, unsigned int nStartYear, unsigned int nEndYear)
 {
     std::string strCopyrightHolders = strPrefix + strprintf(" %u-%u ", nStartYear, nEndYear) + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION));
