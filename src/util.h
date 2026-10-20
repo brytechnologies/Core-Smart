@@ -243,6 +243,8 @@ void SetThreadPriority(int nPriority);
  * when boost is newer than 1.56.
  */
 int GetNumCores();
+/** Return the number of logical cores (hardware threads), at least 1 */
+int GetNumLogicalCores();
 
 void RenameThread(const char* name);
 

@@ -29,6 +29,8 @@ static constexpr int DB_PEAK_USAGE_FACTOR = 2;
 static constexpr int MAX_BLOCK_COINSDB_USAGE = 10 * DB_PEAK_USAGE_FACTOR;
 //! -dbcache default (MiB)
 static const int64_t nDefaultDbCache = 300;
+//! Upper bound for the automatically scaled default dbcache (MiB), conservative on 32-bit
+static const int64_t nMaxAutoDbCache = sizeof(void*) > 4 ? 2048 : 512;
 //! max. -dbcache (MiB)
 static const int64_t nMaxDbCache = sizeof(void*) > 4 ? 16384 : 1024;
 //! min. -dbcache (MiB)
