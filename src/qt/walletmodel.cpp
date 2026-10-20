@@ -31,6 +31,14 @@
 #include <QTimer>
 
 #include <boost/foreach.hpp>
+#include <boost/bind/bind.hpp>
+
+using boost::placeholders::_1;
+using boost::placeholders::_2;
+using boost::placeholders::_3;
+using boost::placeholders::_4;
+using boost::placeholders::_5;
+using boost::placeholders::_6;
 
 WalletModel::WalletModel(const PlatformStyle *platformStyle, CWallet *wallet, OptionsModel *optionsModel, QObject *parent) :
     QObject(parent), wallet(wallet), optionsModel(optionsModel), addressTableModel(0),
